@@ -21,7 +21,7 @@ class AppDelegate: UIResponder,
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        CDManager.shared.saveContext()
+        PersistentStorage.shared.saveContext()
     }
     
 }
