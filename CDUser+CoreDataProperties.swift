@@ -2,7 +2,7 @@
 //  CDUser+CoreDataProperties.swift
 //  CoreDataCURD
 //
-//  Created by Prashant Gajjar on 18/12/22.
+//  Created by Prashant Gajjar on 28/12/22.
 //
 //
 
@@ -19,8 +19,9 @@ extension CDUser {
     @NSManaged public var email: String?
     @NSManaged public var id: UUID?
     @NSManaged public var password: String?
-    @NSManaged public var username: String?
     @NSManaged public var profileImage: Data?
+    @NSManaged public var username: String?
+    @NSManaged public var toSubscription: CDSubscription?
 
 }
 

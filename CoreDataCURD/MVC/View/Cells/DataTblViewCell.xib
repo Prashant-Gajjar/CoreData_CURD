@@ -30,19 +30,25 @@
                                 <rect key="frame" x="162" y="0.0" width="405" height="152"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lt-Tc-MFf">
-                                        <rect key="frame" x="0.0" y="0.0" width="405" height="49.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="405" height="36.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOj-hB-OOY">
-                                        <rect key="frame" x="0.0" y="51.333333333333329" width="405" height="49.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="38.666666666666657" width="405" height="36.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teZ-3v-acv">
-                                        <rect key="frame" x="0.0" y="102.66666666666667" width="405" height="49.333333333333329"/>
+                                        <rect key="frame" x="0.0" y="77" width="405" height="36.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99f-xA-v9I">
+                                        <rect key="frame" x="0.0" y="115.66666666666667" width="405" height="36.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -63,7 +69,8 @@
             <connections>
                 <outlet property="imgvProfile" destination="Hkg-qS-ID9" id="CJM-k9-fyB"/>
                 <outlet property="lblEmail" destination="nOj-hB-OOY" id="GxK-dB-IAa"/>
-                <outlet property="lblPassword" destination="1Lt-Tc-MFf" id="nya-eE-74z"/>
+                <outlet property="lblPassword" destination="teZ-3v-acv" id="zIr-Ne-ZNP"/>
+                <outlet property="lblSubId" destination="99f-xA-v9I" id="Mw7-db-WVy"/>
                 <outlet property="lblUsername" destination="1Lt-Tc-MFf" id="JZr-dO-Kxi"/>
             </connections>
             <point key="canvasLocation" x="258.77862595419845" y="40.140845070422536"/>

@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDSubscription" representedClassName="CDSubscription" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="subscriptionId" attributeType="String"/>
+        <relationship name="toUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDUser" inverseName="toSubscription" inverseEntity="CDUser"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
     <entity name="CDUser" representedClassName="CDUser" syncable="YES">
-        <attribute name="email" optional="YES" attributeType="String"/>
-        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
-        <attribute name="password" optional="YES" attributeType="String"/>
-        <attribute name="profileImage" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
-        <attribute name="username" optional="YES" attributeType="String"/>
+        <attribute name="email" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="password" attributeType="String"/>
+        <attribute name="profileImage" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
+        <attribute name="username" attributeType="String"/>
+        <relationship name="toSubscription" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDSubscription" inverseName="toUser" inverseEntity="CDSubscription"/>
         <uniquenessConstraints>
             <uniquenessConstraint>
                 <constraint value="id"/>

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1580267D295C47AE00E399B2 /* CDUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580267B295C47AE00E399B2 /* CDUser+CoreDataClass.swift */; };
+		1580267E295C47AE00E399B2 /* CDUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580267C295C47AE00E399B2 /* CDUser+CoreDataProperties.swift */; };
+		15802684295C486F00E399B2 /* SubscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15802683295C486F00E399B2 /* SubscriptionModel.swift */; };
+		15802686295C4B8C00E399B2 /* BaseCURDRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15802685295C4B8C00E399B2 /* BaseCURDRepository.swift */; };
+		15802688295C4D6400E399B2 /* SubscriptionDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15802687295C4D6400E399B2 /* SubscriptionDataRepository.swift */; };
+		1580268A295C4E6100E399B2 /* CDSubscription+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15802689295C4E6100E399B2 /* CDSubscription+extensions.swift */; };
+		15802691295C81A100E399B2 /* CDSubscription+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1580268F295C81A100E399B2 /* CDSubscription+CoreDataClass.swift */; };
+		15802692295C81A100E399B2 /* CDSubscription+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15802690295C81A100E399B2 /* CDSubscription+CoreDataProperties.swift */; };
+		15802694295CBAD100E399B2 /* CDSubscriptionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15802693295CBAD100E399B2 /* CDSubscriptionDataManager.swift */; };
 		1583922E29425B450010598F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1583922D29425B450010598F /* AppDelegate.swift */; };
 		1583923229425B450010598F /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1583923129425B450010598F /* HomeVC.swift */; };
 		1583923529425B450010598F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1583923329425B450010598F /* Main.storyboard */; };
@@ -16,8 +25,6 @@
 		1583924B29425FC00010598F /* CDUsersDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1583924A29425FC00010598F /* CDUsersDataManager.swift */; };
 		15AF0A1A294DCA0200FF3E0C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF0A19294DCA0200FF3E0C /* UIViewController+Extension.swift */; };
 		15AF0A1D294F8A8600FF3E0C /* CDUser+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF0A1C294F8A8600FF3E0C /* CDUser+extension.swift */; };
-		15AF0A20294F8AC900FF3E0C /* CDUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF0A1E294F8AC900FF3E0C /* CDUser+CoreDataClass.swift */; };
-		15AF0A21294F8AC900FF3E0C /* CDUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AF0A1F294F8AC900FF3E0C /* CDUser+CoreDataProperties.swift */; };
 		15C0776829452502001FEB19 /* UsersDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0776729452502001FEB19 /* UsersDataRepository.swift */; };
 		15C0776E29452F85001FEB19 /* PersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0776D29452F85001FEB19 /* PersistentStorage.swift */; };
 		15D0A7FD2943B897004A141E /* DataListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0A7FC2943B897004A141E /* DataListVC.swift */; };
@@ -25,9 +32,19 @@
 		15D0A8042943BAFA004A141E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0A8032943BAF9004A141E /* UserModel.swift */; };
 		15D0A8062943BBE9004A141E /* AppUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D0A8052943BBE9004A141E /* AppUtil.swift */; };
 		15EFAC112944C2D100BBCCDB /* DataTblViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15EFAC102944C2D100BBCCDB /* DataTblViewCell.xib */; };
+		D76C852D4EBE737E19E8E086 /* Pods_CoreDataCURD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE488B8D47A9E426F999F382 /* Pods_CoreDataCURD.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1580267B295C47AE00E399B2 /* CDUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		1580267C295C47AE00E399B2 /* CDUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		15802683295C486F00E399B2 /* SubscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionModel.swift; sourceTree = "<group>"; };
+		15802685295C4B8C00E399B2 /* BaseCURDRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCURDRepository.swift; sourceTree = "<group>"; };
+		15802687295C4D6400E399B2 /* SubscriptionDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionDataRepository.swift; sourceTree = "<group>"; };
+		15802689295C4E6100E399B2 /* CDSubscription+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDSubscription+extensions.swift"; sourceTree = "<group>"; };
+		1580268F295C81A100E399B2 /* CDSubscription+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDSubscription+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		15802690295C81A100E399B2 /* CDSubscription+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDSubscription+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		15802693295CBAD100E399B2 /* CDSubscriptionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDSubscriptionDataManager.swift; sourceTree = "<group>"; };
 		1583922A29425B450010598F /* CoreDataCURD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataCURD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1583922D29425B450010598F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1583923129425B450010598F /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -39,8 +56,6 @@
 		1583924A29425FC00010598F /* CDUsersDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDUsersDataManager.swift; sourceTree = "<group>"; };
 		15AF0A19294DCA0200FF3E0C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		15AF0A1C294F8A8600FF3E0C /* CDUser+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+extension.swift"; sourceTree = "<group>"; };
-		15AF0A1E294F8AC900FF3E0C /* CDUser+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataClass.swift"; sourceTree = "<group>"; };
-		15AF0A1F294F8AC900FF3E0C /* CDUser+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		15C0776729452502001FEB19 /* UsersDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersDataRepository.swift; sourceTree = "<group>"; };
 		15C0776D29452F85001FEB19 /* PersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentStorage.swift; sourceTree = "<group>"; };
 		15D0A7FC2943B897004A141E /* DataListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataListVC.swift; sourceTree = "<group>"; };
@@ -48,6 +63,9 @@
 		15D0A8032943BAF9004A141E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		15D0A8052943BBE9004A141E /* AppUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtil.swift; sourceTree = "<group>"; };
 		15EFAC102944C2D100BBCCDB /* DataTblViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataTblViewCell.xib; sourceTree = "<group>"; };
+		3C14D74D6FB2AF6BC32FA3F4 /* Pods-CoreDataCURD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataCURD.release.xcconfig"; path = "Target Support Files/Pods-CoreDataCURD/Pods-CoreDataCURD.release.xcconfig"; sourceTree = "<group>"; };
+		6A4E711E18C4A26F5EA85A7A /* Pods-CoreDataCURD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataCURD.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataCURD/Pods-CoreDataCURD.debug.xcconfig"; sourceTree = "<group>"; };
+		EE488B8D47A9E426F999F382 /* Pods_CoreDataCURD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataCURD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +73,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D76C852D4EBE737E19E8E086 /* Pods_CoreDataCURD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0FA93A13A5270F81417568E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A4E711E18C4A26F5EA85A7A /* Pods-CoreDataCURD.debug.xcconfig */,
+				3C14D74D6FB2AF6BC32FA3F4 /* Pods-CoreDataCURD.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		15802678295C46FF00E399B2 /* CDUser */ = {
+			isa = PBXGroup;
+			children = (
+				1580267B295C47AE00E399B2 /* CDUser+CoreDataClass.swift */,
+				1580267C295C47AE00E399B2 /* CDUser+CoreDataProperties.swift */,
+			);
+			path = CDUser;
+			sourceTree = "<group>";
+		};
+		15802679295C471000E399B2 /* CDSubscription */ = {
+			isa = PBXGroup;
+			children = (
+				1580268F295C81A100E399B2 /* CDSubscription+CoreDataClass.swift */,
+				15802690295C81A100E399B2 /* CDSubscription+CoreDataProperties.swift */,
+			);
+			path = CDSubscription;
+			sourceTree = "<group>";
+		};
 		1583922129425B450010598F = {
 			isa = PBXGroup;
 			children = (
 				1583922C29425B450010598F /* CoreDataCURD */,
 				1583922B29425B450010598F /* Products */,
+				0FA93A13A5270F81417568E7 /* Pods */,
+				60EF445A56B8E0309E4EF854 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,7 +131,6 @@
 				1583924429425CF30010598F /* Application */,
 				15AF0A17294DC98800FF3E0C /* Extensions */,
 				15AF0A16294DC53100FF3E0C /* Managers */,
-				15C07766294524D9001FEB19 /* Repository */,
 				1583924529425D050010598F /* MVC */,
 				1583923929425B460010598F /* Assets.xcassets */,
 				1583923E29425B460010598F /* Info.plist */,
@@ -140,9 +187,10 @@
 		1583924929425D390010598F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				15D0A80C2944BE75004A141E /* CoreDataClasses */,
 				15D0A8032943BAF9004A141E /* UserModel.swift */,
+				15802683295C486F00E399B2 /* SubscriptionModel.swift */,
 				15D0A8052943BBE9004A141E /* AppUtil.swift */,
+				15D0A80C2944BE75004A141E /* CoreDataSupportFiles */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				1583924A29425FC00010598F /* CDUsersDataManager.swift */,
+				15802693295CBAD100E399B2 /* CDSubscriptionDataManager.swift */,
 				15C0776D29452F85001FEB19 /* PersistentStorage.swift */,
 			);
 			path = Managers;
@@ -176,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				15AF0A1C294F8A8600FF3E0C /* CDUser+extension.swift */,
+				15802689295C4E6100E399B2 /* CDSubscription+extensions.swift */,
 			);
 			path = "CoreDataClasses+extensions";
 			sourceTree = "<group>";
@@ -183,7 +233,9 @@
 		15C07766294524D9001FEB19 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				15802685295C4B8C00E399B2 /* BaseCURDRepository.swift */,
 				15C0776729452502001FEB19 /* UsersDataRepository.swift */,
+				15802687295C4D6400E399B2 /* SubscriptionDataRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -197,14 +249,23 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		15D0A80C2944BE75004A141E /* CoreDataClasses */ = {
+		15D0A80C2944BE75004A141E /* CoreDataSupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				15AF0A1E294F8AC900FF3E0C /* CDUser+CoreDataClass.swift */,
-				15AF0A1F294F8AC900FF3E0C /* CDUser+CoreDataProperties.swift */,
 				15AF0A1B294F8A6400FF3E0C /* CoreDataClasses+extensions */,
+				15802679295C471000E399B2 /* CDSubscription */,
+				15802678295C46FF00E399B2 /* CDUser */,
+				15C07766294524D9001FEB19 /* Repository */,
 			);
-			path = CoreDataClasses;
+			path = CoreDataSupportFiles;
+			sourceTree = "<group>";
+		};
+		60EF445A56B8E0309E4EF854 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE488B8D47A9E426F999F382 /* Pods_CoreDataCURD.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,9 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1583924129425B460010598F /* Build configuration list for PBXNativeTarget "CoreDataCURD" */;
 			buildPhases = (
+				9621E5619B0C566AA40FFF99 /* [CP] Check Pods Manifest.lock */,
 				1583922629425B450010598F /* Sources */,
 				1583922729425B450010598F /* Frameworks */,
 				1583922829425B450010598F /* Resources */,
+				FBB02A2625A99B7A53DFD4C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -274,23 +337,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9621E5619B0C566AA40FFF99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreDataCURD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBB02A2625A99B7A53DFD4C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreDataCURD/Pods-CoreDataCURD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoreDataCURD/Pods-CoreDataCURD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoreDataCURD/Pods-CoreDataCURD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1583922629425B450010598F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15802686295C4B8C00E399B2 /* BaseCURDRepository.swift in Sources */,
+				15802684295C486F00E399B2 /* SubscriptionModel.swift in Sources */,
 				15C0776E29452F85001FEB19 /* PersistentStorage.swift in Sources */,
 				15AF0A1D294F8A8600FF3E0C /* CDUser+extension.swift in Sources */,
 				15AF0A1A294DCA0200FF3E0C /* UIViewController+Extension.swift in Sources */,
 				1583923229425B450010598F /* HomeVC.swift in Sources */,
 				15D0A8042943BAFA004A141E /* UserModel.swift in Sources */,
+				15802688295C4D6400E399B2 /* SubscriptionDataRepository.swift in Sources */,
 				1583924B29425FC00010598F /* CDUsersDataManager.swift in Sources */,
-				15AF0A20294F8AC900FF3E0C /* CDUser+CoreDataClass.swift in Sources */,
+				15802694295CBAD100E399B2 /* CDSubscriptionDataManager.swift in Sources */,
+				15802692295C81A100E399B2 /* CDSubscription+CoreDataProperties.swift in Sources */,
+				1580267D295C47AE00E399B2 /* CDUser+CoreDataClass.swift in Sources */,
 				1583922E29425B450010598F /* AppDelegate.swift in Sources */,
+				1580268A295C4E6100E399B2 /* CDSubscription+extensions.swift in Sources */,
+				15802691295C81A100E399B2 /* CDSubscription+CoreDataClass.swift in Sources */,
 				15D0A7FD2943B897004A141E /* DataListVC.swift in Sources */,
 				1583923829425B450010598F /* CoreDataCURD.xcdatamodeld in Sources */,
 				15D0A8012943B9FA004A141E /* DataTblViewCell.swift in Sources */,
-				15AF0A21294F8AC900FF3E0C /* CDUser+CoreDataProperties.swift in Sources */,
+				1580267E295C47AE00E399B2 /* CDUser+CoreDataProperties.swift in Sources */,
 				15D0A8062943BBE9004A141E /* AppUtil.swift in Sources */,
 				15C0776829452502001FEB19 /* UsersDataRepository.swift in Sources */,
 			);
@@ -434,6 +546,7 @@
 		};
 		1583924229425B460010598F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A4E711E18C4A26F5EA85A7A /* Pods-CoreDataCURD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +578,7 @@
 		};
 		1583924329425B460010598F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C14D74D6FB2AF6BC32FA3F4 /* Pods-CoreDataCURD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

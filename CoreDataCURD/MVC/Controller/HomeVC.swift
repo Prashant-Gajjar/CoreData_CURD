@@ -9,9 +9,10 @@ import UIKit
 
 class HomeVC: UIViewController {
     //MARK: - Outlets
-    @IBOutlet private weak var txtUsername  : UITextField!
-    @IBOutlet private weak var txtEmail     : UITextField!
-    @IBOutlet private weak var txtPassword  : UITextField!
+    @IBOutlet private weak var txtUsername      : UITextField!
+    @IBOutlet private weak var txtEmail         : UITextField!
+    @IBOutlet private weak var txtPassword      : UITextField!
+    @IBOutlet private weak var txtSubscription  : UITextField!
     
     @IBOutlet private weak var btnSave      : UIButton!
     @IBOutlet private weak var btnUpdate    : UIButton!
@@ -39,30 +40,53 @@ class HomeVC: UIViewController {
     
     //MARK: - IBAction
     @IBAction private func actionSave() {
-        CDUsersDataManager.shared.create(user: UserModel(
-            username        : txtUsername.text!,
-            email           : txtEmail.text!,
-            password        : txtPassword.text!,
-            id              : UUID(),
-            profileImage    : imgvProfile.image?.pngData()!
-        ))
+        var subscription: SubscriptionModel?
+        subscription = SubscriptionModel(id             : UUID(),
+                                         subscriptionId : txtSubscription.text)
+        
+        if let subId = subscription?.subscriptionId, subId.isEmpty {
+            subscription = nil
+        }
+        
+        let user = UserModel(username        : txtUsername.text!,
+                             email           : txtEmail.text!,
+                             password        : txtPassword.text!,
+                             id              : UUID(),
+                             profileImage    : (imgvProfile.image?.pngData())!,
+                             subscription    : subscription)
+        
+        CDUsersDataManager.shared.create(user: user)
         
         [txtEmail,
          txtPassword,
-         txtUsername].forEach({$0?.resignFirstResponder()})
+         txtUsername,
+         txtSubscription].forEach({$0?.resignFirstResponder()})
         [txtEmail,
          txtPassword,
-         txtUsername].forEach({$0?.text = ""})
+         txtUsername,
+         txtSubscription].forEach({$0?.text = ""})
         imgvProfile.image = nil
     }
     
     @IBAction private func actionUpdate() {
+        let subModelId = userModel?.subscription?.id ?? UUID()
+        
+        var subscription: SubscriptionModel? = SubscriptionModel(
+            id             : subModelId,
+            subscriptionId : txtSubscription.text
+        )
+        
+        if let subId = subscription?.subscriptionId, subId.isEmpty {
+            subscription = nil
+        }
+        
         if CDUsersDataManager.shared.update(user: UserModel(
             username        : txtUsername.text!,
             email           : txtEmail.text!,
             password        : txtPassword.text!,
             id              : userModel!.id,
-            profileImage    : imgvProfile.image?.pngData()
+            profileImage    : (imgvProfile.image?.pngData())!,
+            subscription    : subscription
         )) {
             completion?()
             pop()
@@ -106,10 +130,11 @@ class HomeVC: UIViewController {
             
             self.completion = completion
             
-            txtEmail.text       = userModel.email
-            txtUsername.text    = userModel.username
-            txtPassword.text    = userModel.password
-            imgvProfile.image   = UIImage(data: userModel.profileImage!)
+            txtEmail.text           = userModel.email
+            txtUsername.text        = userModel.username
+            txtPassword.text        = userModel.password
+            txtSubscription.text    = userModel.subscription?.subscriptionId
+            imgvProfile.image       = UIImage(data: userModel.profileImage)
         }
     }
 }

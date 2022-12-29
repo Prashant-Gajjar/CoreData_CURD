@@ -2,7 +2,7 @@
 //  CDUser+CoreDataClass.swift
 //  CoreDataCURD
 //
-//  Created by Prashant Gajjar on 18/12/22.
+//  Created by Prashant Gajjar on 28/12/22.
 //
 //
 
